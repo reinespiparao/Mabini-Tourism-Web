@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mabini Tourism</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+  <div class="logo">
+    <img src="assets/image/mabini-logo.jpg" alt="Mabini Logo">
+    <span class="logo-text">Mabini<span style="color:#00aaff;">Tourism</span></span>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#attractions">Attractions</a></li>
+      <li><a href="#map">Location</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+  <!-- Hero with video background -->
+  <section id="hero">
+    <video autoplay muted loop id="bg-video">
+      <source src="assets/videos/mabini video.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content">
+      <h1>Explore Mabini, Batangas</h1>
+      <p>Dive into paradise, climb peaks, and taste local flavors</p>
+      <a href="#attractions" class="btn">Plan Your Visit</a>
+    </div>
+  </section>
+
+  <!-- Attractions Carousel -->
+  <section id="attractions">
+    <h2>Top Attractions</h2>
+    <div class="carousel">
+      <div class="slide active" data-title="Diving Spots" data-desc="Mabini is famous for its world-class diving spots like Anilao, home to rich coral reefs and marine biodiversity." data-images="assets/image/anilao-diving1.jpg,assets/image/anilao-diving2.jpg,assets/image/anilao-diving3.jpg">
+        <img src="assets/image/divers.jpg" alt="Diving Spots">
+        <p>World-class diving spots teeming with marine life.</p>
+      </div>
+      <div class="slide" data-title="Beaches" data-desc="Mabini offers serene beaches with fine sand and crystal-clear waters, perfect for relaxation and water sports." data-images="assets/image/Anilao-Mabini-Batangas.jpg,assets/image/Sombrero-Island.jpg,assets/image/Tingloy-Beach.jpg">
+        <img src="assets/image/Anilao-Beach.jpg" alt="Beaches">
+        <p>White-sand beaches perfect for relaxation and fun.</p>
+      </div>
+      <div class="slide" data-title="Mt. Gulugod Baboy" data-desc="A popular hiking destination that offers panoramic views of Batangas Bay and Balayan Bay." data-images="assets/image/mount1.jpg,assets/image/mount2.jpg,assets/image/mount3.jpg">
+        <img src="assets/image/mount-gulugod2 (1).png" alt="Mt. Gulugod Baboy">
+        <p>Hike Mt. Gulugod Baboy and enjoy breathtaking views.</p>
+      </div>
+      <div class="slide" data-title="Local Delicacies" data-desc="Indulge in Batangas specialties like lomi, bulalo, and suman." data-images="assets/image/lomi.jpg,assets/image/bulalo.jpg,assets/image/suman.jpg">
+        <img src="assets/image/batangas-lomi.jpg" alt="Local Delicacies">
+        <p>Savor Batangas delicacies loved by locals and tourists.</p>
+      </div>
+    </div>
+    <div class="carousel-controls">
+      <button id="prev">&#10094;</button>
+      <button id="next">&#10095;</button>
+    </div>
+  </section>
+
+<!-- Fullscreen Image Viewer -->
+<div id="fullscreenViewer" class="fullscreen-viewer">
+  <span class="close-viewer">&times;</span>
+  <img class="viewer-content" id="viewerImage">
+  <div class="viewer-nav">
+    <button class="prev-img">❮</button>
+    <button class="next-img">❯</button>
+  </div>
+</div>
+
+  <!-- Modal Popup -->
+  <div id="attractionModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+      <div id="modalImages" class="modal-images"></div>
+    </div>
+  </div>
+
+  <!-- Google Map -->
+  <section id="map">
+    <h2>Find Us</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3870.248282876566!2d120.9244!3d13.7345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd083adb8b5f09%3A0x1c3ff1c85dd2c1b3!2sMabini%2C%20Batangas!5e0!3m2!1sen!2sph!4v1700000000000"
+      width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="footer-content">
+      <h3>Mabini Tourism</h3>
+      <p>Discover the natural wonders of Batangas.</p>
+      <ul class="socials">
+        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+      </ul>
+      <p>📍 Mabini, Batangas | 📞 +63 912 345 6789 | ✉️ info@mabinitourism.ph</p>
+    </div>
+  </footer>
+</body>
+
+</html>
